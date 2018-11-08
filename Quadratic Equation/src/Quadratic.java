@@ -20,17 +20,24 @@ public class Quadratic {
 		double d = delta(b, a, c);
 
 //############################ BIỆN LUẬN SỐ NGHIỆM ############################
-		if (a == 0) {
+		if ((a == 0) && (b != 0) && (c != 0)) {
 			System.out.println("phương trình có một nghiệm : " + nghiem(c, b));
 		} else {
-			if (delta(b, a, c) > 0) {
-				System.out.println(" phương trình có hai nghiệm\n x1= " + x1(a, b, c, d) + "\n x2= " + x2(a, b, c, d));
+			if ((a == 0) && (b == 0) && (c == 0)) {
+
+				System.out.println(" phương trình vô số nghiệm\n (đúng với mọi nghiệm ∈ R)");
 
 			} else {
-				if (delta(a, b, c) == 0) {
-					System.out.println("phương trình có nghiệm kép: " + xKep(b, a));
+				if (delta(b, a, c) > 0) {
+					System.out.println(
+							" phương trình có hai nghiệm\n x1= " + x1(a, b, c, d) + "\n x2= " + x2(a, b, c, d));
+
 				} else {
-					System.out.println("phương trình vô nghiệm");
+					if (delta(a, b, c) == 0) {
+						System.out.println("phương trình có nghiệm kép: " + xKep(b, a));
+					} else {
+						System.out.println("phương trình vô nghiệm");
+					}
 				}
 			}
 		}
