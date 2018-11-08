@@ -27,7 +27,7 @@ public class Quadratic {
 				System.out.println(" phương trình có hai nghiệm\n x1= " + x1(a, b, c, d) + "\n x2= " + x2(a, b, c, d));
 
 			} else {
-				if (delta(a, b, c) > 0) {
+				if (delta(a, b, c) == 0) {
 					System.out.println("phương trình có nghiệm kép: " + xKep(b, a));
 				} else {
 					System.out.println("phương trình vô nghiệm");
