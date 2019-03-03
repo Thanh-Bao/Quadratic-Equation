@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-//@@@@@@@@@@@@@@@ chương trình giải phương trình SỬ DỤNG PHƯƠNG THỨC @@@@@@@@@@@@@@
+
 
 public class Quadratic {
 	public static void main(String[] args) {
